@@ -1,4 +1,3 @@
-# BlockChain-Hyperledger
 # Hyperledger Fabric 기본 실습 튜토리얼
 
 ## 프로젝트 개요
@@ -22,6 +21,50 @@
 * Asset 조회(ReadAsset)
 * Endorsement 정책 이해
 * Docker 기반 체인코드 빌드 구조 이해
+
+---
+
+# 실습 전 필수 사항
+
+## Docker Desktop 실행
+
+실습 시작 전에 반드시 Docker Desktop을 먼저 실행해야 한다.
+
+Hyperledger Fabric은 내부적으로:
+
+```plaintext
+peer
+orderer
+chaincode
+```
+
+등을 모두 Docker container로 실행한다.
+
+따라서 Docker Desktop이 꺼져 있으면:
+
+```plaintext
+Cannot connect to the Docker daemon
+```
+
+또는
+
+```plaintext
+docker.sock connection error
+```
+
+같은 오류가 발생한다.
+
+---
+
+## 확인 방법
+
+```bash
+docker ps
+```
+
+정상이라면 container 목록 또는 빈 목록이 출력된다.
+
+Docker가 실행되지 않은 경우 오류가 발생한다.
 
 ---
 

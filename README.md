@@ -288,57 +288,6 @@ docker pull hyperledger/fabric-ccenv:3.1
 
 ---
 
-# 실습 중 발생한 오류들
-
-## 오류 1
-
-```plaintext
-Unknown flag: basic-ccp
-```
-
-### 원인
-
-줄바꿈 시 `\` 앞 공백 누락.
-
-잘못된 예:
-
-```bash
--ccl go\
--ccl basic\
-```
-
----
-
-### 해결
-
-```bash
--ccl go \
--ccn basic \
-```
-
----
-
-## 오류 2
-
-```plaintext
-Unknown flag: -cv
-```
-
-### 원인
-
-Fabric 버전에 따라 옵션명이 다름.
-
----
-
-### 해결
-
-```bash
--ccv 1.0
-```
-
-사용.
-
----
 
 # 8. peer CLI 환경 변수 설정
 

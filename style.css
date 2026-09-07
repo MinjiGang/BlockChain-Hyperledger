@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+div {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+pre {
+    padding: 20px;
+    background: #111;
+    color: #eee;
+    min-height: 150px;
+    overflow: auto;
+}
